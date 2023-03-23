@@ -14,13 +14,13 @@ function App() {
   let component 
  
 
-  switch(window.location.pathname){
+  switch(window.location.href){
 
     case "/":
       component = <HomePage/>
       break
 
-    case "/second":
+    case "https://hdmovies.onrender.com/second":
       component = <MovieDetails/>
       break
 
