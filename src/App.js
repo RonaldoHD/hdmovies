@@ -20,7 +20,7 @@ function App() {
       component = <HomePage/>
       break
 
-    case "/second":
+    case "https://hdmovies.onrender.com/second":
       component = <MovieDetails/>
       break
 
