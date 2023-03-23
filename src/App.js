@@ -20,7 +20,7 @@ function App() {
       component = <HomePage/>
       break
 
-    case window.location.origin+"/second":
+    case `https://www.example.com`+"/second":
       component = <MovieDetails/>
       break
 
