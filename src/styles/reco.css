@@ -1,0 +1,15 @@
+.reco-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  margin: auto;
+
+  align-content: space-around;
+  justify-content: center;
+  align-items: baseline;
+}
+.movie-reco{
+  width: 20%;
+  
+}

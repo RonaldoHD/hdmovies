@@ -1,0 +1,10 @@
+.cast-card{
+  text-align: center;
+  font-size: small;
+  line-height: 20px;
+  backdrop-filter: blur(10px);
+
+}
+.cast-card p{
+  color: aliceblue;
+}
