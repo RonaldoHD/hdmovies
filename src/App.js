@@ -16,7 +16,7 @@ function App() {
 
   switch(window.location.href){
 
-    case "/":
+    case "https://hdmovies.onrender.com":
       component = <HomePage/>
       break
 
