@@ -66,7 +66,7 @@ const [movie,setMovie]=useState([])
 
 const click=(thisMovie)=>{
   sessionStorage.setItem('movieData', JSON.stringify(thisMovie));
-  window.location.href=window.location.origin+'/second'
+  window.location.href=`https://hdmovies.onrender.com/second`
 }
   return(
    <Slider{...settings} className="slider-movies" >
