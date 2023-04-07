@@ -18,7 +18,7 @@ function Header() {
   return (
     <div className="app-container">
       <div className="icon" onClick={toggleSidebar}>
-      <i  className='open-side' >  <FaBars size={75} color="white" />  </i>
+      <i  className='open-side' >  <FaBars size={75} color="#1987bd" />  </i>
       </div>
       <h1>HD Movies</h1>
       <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>

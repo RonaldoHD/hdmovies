@@ -36,10 +36,7 @@ function MovieDetails(){
     .then(response => response.json())
     .then(data => {
       // handle the API response data here
-
-      setGenre(data.genres)
-      
-      
+      setGenre(data.genres)      
     })
     .catch(error => {
       // handle any errors here

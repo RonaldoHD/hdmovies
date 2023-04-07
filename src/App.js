@@ -7,6 +7,7 @@ import './App.css';
 import MovieDetails from './pages/MovieDetails'
 import Search from './components/search';
 import HomePage from './pages/HomePage'
+import Footer from './components/footer';
 function App() {
 
 
@@ -36,9 +37,7 @@ function App() {
 
      {component}
 
-       <div>
-        <h1>Footerrrrr</h1>
-       </div>
+       <Footer/>
 
       </div>
   );

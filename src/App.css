@@ -1,14 +1,19 @@
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 h1{
   color: white;
+  margin-left: 20px;
+}
+.app-container h1{
+  color: white;
+  margin: auto;
  
 }
 
 .topPage{
   display: flex;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
   height: 5vw;
@@ -156,4 +161,24 @@ input:-webkit-autofill:active {
 .content {
   flex-grow: 1;
   padding: 20px;
+}
+@media screen  and (max-width: 450px) {
+  .topPage{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .topPage h1{
+    display: none;
+  }
+  .app-container{
+    margin-left: auto;
+    float: left;
+  }
+  h1{
+    margin-left: 10px;
+  }
+
+
 }

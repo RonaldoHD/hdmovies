@@ -5,14 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MovieDetails from "../pages/MovieDetails";
 
-const CardCarousel=({arr})=>{
+const TvshowsCarousel=({arr})=>{
 
   const settings = {
    
     
     infinite: false,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
@@ -47,7 +47,7 @@ const CardCarousel=({arr})=>{
     ]
   };
 
-const image_path = "https://image.tmdb.org/t/p/w200"
+const image_path = "https://image.tmdb.org/t/p/w500"
 
 
 const [movie,setMovie]=useState([])
@@ -61,14 +61,15 @@ const click=(thisMovie)=>{
      {arr.map(item=>{
       return(   
         <div  className="movie-card"  > 
-          <img  src={`${image_path}${item.poster_path}`} onClick={()=>click(item)} ></img>   
+          <img style={{borderRadius:10 , }} src={`${image_path}${item.backdrop_path}`} onClick={()=>click(item)} ></img>   
+          <p style={{padding:10 , color:"white"}} >{item.title}</p>
        </div> 
        )})}
     </Slider>
   )
 }
 
-export default CardCarousel;
+export default TvshowsCarousel;
 
 
 

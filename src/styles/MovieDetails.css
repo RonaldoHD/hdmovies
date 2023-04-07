@@ -4,6 +4,7 @@
   
 }
 .top-poster{
+  position: relative;
   min-height: 600px;
     margin-left: auto;
   background-repeat: no-repeat;
@@ -38,6 +39,7 @@ img{
 
 .poster-detail{
   width: 25vw;
+  position: relative;
   height:auto ;
   margin: auto;
 }
@@ -47,7 +49,7 @@ img{
 }
 
 .thedetails{
- 
+ position: relative;
     width: 60%;
   margin: auto;
   margin-top: 10%;
