@@ -66,7 +66,7 @@ const [movie,setMovie]=useState([])
 
 const click=(thisMovie)=>{
   sessionStorage.setItem('movieData', JSON.stringify(thisMovie));
-  window.location.href='/second'
+  window.location.pathname='/second'
 }
   return(
    <Slider{...settings} className="slider-movies" >
