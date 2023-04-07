@@ -12,6 +12,7 @@ function App() {
 
 
   let component 
+ 
 
   switch(window.location.pathname){
 
