@@ -27,7 +27,8 @@
 
 
 img{
-  width: 100%;
+  width: 90%;
+  
  
 }
 
@@ -113,9 +114,13 @@ margin-top: -30px;
     width: 90%;
   }
   .single-genre p{
-   padding: 3px;  
+   padding: 2px;  
+ 
+  }
+  .thedetails h1{
+    font-size: 1.5em;
   }
   .thedetails p{
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 }

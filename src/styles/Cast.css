@@ -11,7 +11,10 @@
 .cast-card p{
   color: aliceblue;
 }
-
+.actorimg{
+  width: 100%;
+  border-radius: 10px 10px;
+}
 .actorname{
   font-size: 2em;
 }
@@ -32,7 +35,7 @@
     font-size: small;
 
     border: 1px solid #343434;
-    height: 160px;
+    height: 180px;
     border-radius: 10px;
     background-color: #343434;
     box-shadow: 3px 2px 4px 1px #000000;

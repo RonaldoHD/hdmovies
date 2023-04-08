@@ -13,3 +13,10 @@
   width: 20%;
   
 }
+@media screen and (max-width:450px) {
+
+  .movie-reco{
+    width: 30%;
+  }
+  
+}

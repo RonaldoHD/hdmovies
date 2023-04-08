@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import '../styles/moviecarousel.css'
+import '../styles/tvshowname.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -61,8 +61,8 @@ const click=(thisMovie)=>{
      {arr.map(item=>{
       return(   
         <div  className="movie-card"  > 
-          <img style={{borderRadius:10 , }} src={`${image_path}${item.backdrop_path}`} onClick={()=>click(item)} ></img>   
-          <p style={{padding:10 , color:"white"}} >{item.title}</p>
+          <img style={{borderRadius:10  }} src={`${image_path}${item.backdrop_path}`} onClick={()=>click(item)} ></img>   
+          <p className="tvshowname" >{item.title}</p>
        </div> 
        )})}
     </Slider>
