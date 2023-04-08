@@ -27,7 +27,7 @@
 
 
 img{
-  width: 90%;
+  width: 100%;
  
 }
 
@@ -94,4 +94,28 @@ margin-top: -30px;
 .movie-desc{
   width: 80%;
   word-wrap: break-word;
+}
+
+@media screen and (max-width:450px) {
+
+  .poster-detail{
+    display: none;
+  }
+  .top-poster{
+    min-height: 300px;
+    background-position: center;
+  }
+
+  .cast-list{
+    margin: auto;
+  }
+  .thedetails{
+    width: 90%;
+  }
+  .single-genre p{
+   padding: 3px;  
+  }
+  .thedetails p{
+    font-size: 0.9em;
+  }
 }

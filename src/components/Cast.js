@@ -5,8 +5,8 @@ const Cast=({data})=>{
   return(
        <div className="cast-card" >
         <img src={`${image_path}${data.profile_path}`} ></img>
-        <h1>{data.name}</h1>
-        <p>{data.character}</p>
+        <h1 className="actorname" >{data.name}</h1>
+        <p className="character">{data.character}</p>
        </div>
      
   )

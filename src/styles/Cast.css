@@ -1,10 +1,40 @@
-.cast-card{
-  text-align: center;
-  font-size: small;
-  line-height: 20px;
-  backdrop-filter: blur(10px);
+.cast-card {
+    margin: 5px;
+    font-size: small;
 
+    border: 1px solid #343434;
+
+    border-radius: 10px;
+    background-color: #343434;
+    box-shadow: 3px 2px 4px 1px #000000;
 }
 .cast-card p{
   color: aliceblue;
+}
+
+.actorname{
+  font-size: 2em;
+}
+
+@media screen and (max-width:450px) {
+  .actorname{
+    font-size: 70%;
+    margin: auto;
+    padding: 5px;
+  }
+  .character{
+    font-size: 60%;
+    margin: auto;
+    padding: 5px;
+  }
+  .cast-card {
+    margin: 5px;
+    font-size: small;
+
+    border: 1px solid #343434;
+    height: 160px;
+    border-radius: 10px;
+    background-color: #343434;
+    box-shadow: 3px 2px 4px 1px #000000;
+}
 }
