@@ -8,24 +8,8 @@ import MovieDetails from './pages/MovieDetails'
 import Search from './components/search';
 import HomePage from './pages/HomePage'
 import Footer from './components/footer';
+import { Route,Routes } from 'react-router-dom';
 function App() {
-
-
-
-  let component 
- 
-
-  switch(window.location.pathname){
-
-    case "/":
-      component = <HomePage/>
-      break
-
-    case "/second":
-      component = <MovieDetails/>
-      break
-
-  }
 
   return (
     <div className="App">
@@ -35,7 +19,10 @@ function App() {
         <SearchBar/>
       </div>
 
-     {component}
+     <Routes>
+      <Route path='/' element={<HomePage/>} ></Route>
+      <Route path='/second' element={<MovieDetails/>} ></Route>
+     </Routes>
 
        <Footer/>
 
