@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineClose} from 'react-icons/ai'
+import { Link } from 'react-router-dom';
 import '../styles/header.css'
 
 
 function Header() {
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -26,7 +28,7 @@ function Header() {
           <i className='close-side' ><AiOutlineClose  size={44} color="white" /></i>
         </div>
         <ul className='nav-list' >
-          <li>Home</li>
+          <li  ><Link to="/" >Home</Link></li>
           
           <br></br>
           <li>Categories :</li>
