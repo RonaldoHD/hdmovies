@@ -11,7 +11,7 @@ export default function Footer() {
 		<button class="form__button">Send</button>
 	</div>
 	<div class="notice">
-    <input type={checkbox} ></input>
+   
   		<span class="notice__copy">I agree to my email address being stored and uses to recieve monthly newsletter.</span>
 	</div>
 </div>
