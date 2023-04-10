@@ -1,13 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineClose} from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import '../styles/header.css'
+import Category from '../pages/Category';
 
 
 function Header() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [genres,setgenres]=useState([])
+
+
+  useEffect(()=>{
+    fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=759b5e6f82a4b09d3c0d2781b63d9705')
+    .then(response => response.json())
+    .then(data => {
+      // handle the API response data here
+     
+      setgenres(data.genres)
+ 
+    })
+    .catch(error => {
+      // handle any errors here
+    });
+  },[])
 
   const toggleSidebar = () => {
     setSidebarOpen(prev => !prev);
@@ -16,6 +33,15 @@ function Header() {
   const closeSidebar = () => {
     setSidebarOpen(false);
   };
+
+
+  const getGenre=(element)=>{
+   
+    sessionStorage.setItem('genreID',element.id)
+    sessionStorage.setItem('genreName',element.name)
+    window.location.pathname='/third'
+   
+  }
 
   return (
     <div className="app-container">
@@ -31,17 +57,15 @@ function Header() {
           <li  ><Link to="/" >Home</Link></li>
           
           <br></br>
-          <li>Categories :</li>
+          <li>Categories </li>
 
         </ul>
          <ul className='cat-list'>
-          <li>Action</li>
-          <li>Drama</li>
-          <li>TV Shows</li>
-          <li>Adventure</li>
-          <li>Fantasy</li>
-          <li>War</li>
-          <li>Romance</li>
+          {genres.map(item=>{
+            return(
+              <li onClick={()=>getGenre(item)} >{item.name}</li>
+            )
+          })}
          </ul>
       </div>
 

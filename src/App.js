@@ -9,6 +9,8 @@ import Search from './components/search';
 import HomePage from './pages/HomePage'
 import Footer from './components/footer';
 import { Route,Routes } from 'react-router-dom';
+import Category from './pages/Category';
+
 function App() {
 
   return (
@@ -22,9 +24,12 @@ function App() {
      <Routes>
       <Route path='/' element={<HomePage/>} ></Route>
       <Route path='/second' element={<MovieDetails/>} ></Route>
+       <Route path='/third' element={<Category/>} ></Route>
+       <Route path='/search' element={<Search/>} ></Route>
      </Routes>
 
        <Footer/>
+       <div>.</div>
 
       </div>
   );

@@ -52,24 +52,24 @@ function MovieDetails(){
     
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           infinite: true,
-          dots: true
+          
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           initialSlide: 2
         }
       },
@@ -169,8 +169,9 @@ function MovieDetails(){
          </div>
 
          <div className="detail-info" >
-         <p>{movieData.release_date}</p>
-         <p>{movieData.vote_average}%</p>
+         <p>Release Date : {movieData.release_date}</p>
+         
+         <p>Ratings : {movieData.vote_average}%</p>
          </div>
        
         <div  className="movie-desc">

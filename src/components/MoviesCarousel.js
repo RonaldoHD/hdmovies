@@ -22,7 +22,7 @@ const CardCarousel=({arr})=>{
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          
         }
       },
       {
@@ -60,8 +60,8 @@ const click=(thisMovie)=>{
    <Slider{...settings} className="slider-movies" >
      {arr.map(item=>{
       return(   
-        <div  className="movie-card"  > 
-          <img  src={`${image_path}${item.poster_path}`} onClick={()=>click(item)} ></img>   
+        <div  className="movie-card" > 
+          <img className="http" src={`${image_path}${item.poster_path}`} onClick={()=>click(item)} ></img>   
        </div> 
        )})}
     </Slider>

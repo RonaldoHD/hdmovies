@@ -108,15 +108,17 @@ export default function HomePage(){
   return(
   <div>
 
+     
+     <div>
+      <h1>Action</h1>
+     <CardCarousel arr={action} />
+     </div>
+
      <div>
       <h1>TV Shows</h1>
      <TvshowsCarousel arr={tvshows} />
      </div>
 
-     <div>
-      <h1>Action</h1>
-     <CardCarousel arr={action} />
-     </div>
 
      <div>
       <h1>Adventure</h1>

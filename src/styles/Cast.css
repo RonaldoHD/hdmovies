@@ -1,7 +1,6 @@
 .cast-card {
     margin: 5px;
     font-size: small;
-
     border: 1px solid #343434;
 
     border-radius: 10px;
@@ -10,13 +9,16 @@
 }
 .cast-card p{
   color: aliceblue;
+  font-size: 0.9vw;
+  margin-left: 10px;
 }
 .actorimg{
   width: 100%;
   border-radius: 10px 10px;
 }
 .actorname{
-  font-size: 2em;
+  font-size: 1vw;
+  margin-left: 10px;
 }
 
 @media screen and (max-width:450px) {

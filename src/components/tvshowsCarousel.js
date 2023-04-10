@@ -36,9 +36,9 @@ const TvshowsCarousel=({arr})=>{
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 0,
           infinite: true,
       
         
@@ -57,6 +57,7 @@ const click=(thisMovie)=>{
   window.location.pathname='/second'
 }
   return(
+    <div className="tv-shows" >
    <Slider{...settings} className="slider-movies" >
      {arr.map(item=>{
       return(   
@@ -66,6 +67,8 @@ const click=(thisMovie)=>{
        </div> 
        )})}
     </Slider>
+    </div>
+  
   )
 }
 
